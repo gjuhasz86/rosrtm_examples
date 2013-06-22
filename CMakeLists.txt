@@ -4,11 +4,10 @@ project(rosrtm_examples)
 find_package(catkin REQUIRED COMPONENTS ros_rtm_gateway roscpp std_msgs)
 
 catkin_package(
-   INCLUDE_DIRS include
   CATKIN_DEPENDS ros_rtm_gateway message_runtime roscpp std_msgs
 )
 
-include_directories(include
+include_directories(
   ${catkin_INCLUDE_DIRS}
   /usr/include/openrtm-1.1
   /usr/include/openrtm-1.1/rtm/idl
